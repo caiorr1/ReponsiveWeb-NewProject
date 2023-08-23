@@ -13,14 +13,3 @@ const ButtonPlanos = styled.div`
   gap: 10px;
   cursor: pointer;
 `;
-
-
-
-export default function ButtonConhecaPlanos ({text}) {
-    return (
-        <ButtonPlanos>
-            {text}
-        </ButtonPlanos>
-    )
-}
-
