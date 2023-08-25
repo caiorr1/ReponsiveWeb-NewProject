@@ -1,7 +1,9 @@
-export default function ButtonConhecaPlanos ({text}) {
+import CustomButton from './styled'
+
+export default function BotaoConhecaPlanos ({text}) {
     return (
-        <ButtonPlanos>
+        <CustomButton>
             {text}
-        </ButtonPlanos>
+        </CustomButton> 
     )
 }
