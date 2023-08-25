@@ -1,15 +1,18 @@
 import styled from "styled-components"
 
-const ButtonPlanos = styled.div`
-  padding: 8px 16px;
-  left: 965px;
-  top: 10px;
+const CustomButton = styled.button`
+  padding: 10px 16px;
+  left: 10rem;
   position: absolute;
   background: #EC4899;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
+  color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
 `;
+
+export default CustomButton;
