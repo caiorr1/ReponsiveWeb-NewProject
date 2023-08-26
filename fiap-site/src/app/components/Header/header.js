@@ -5,7 +5,7 @@ export default function CabecalhoPadrao() {
   return (
     <HeaderWrapper>
       <LogoContainer>
-        <LogoImage src="" alt="Logo" />
+        <LogoImage src={"../Images/Logo-Andromeda.png"} alt="LogoAndromeda" />
         <LogoText>Andromeda</LogoText>
       </LogoContainer>
       <Navigation>
