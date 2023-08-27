@@ -7,11 +7,11 @@ import BodyPadrao from "./components/PageBody/pagebody";
 export default function Home() {
   return (
     <main>
-      <div>
+      <section>
         <CabecalhoPadrao/>
         <main><BodyPadrao/></main>
-        <RodapePadrao/>
-      </div>
+      </section>
+      <footer><RodapePadrao/></footer>
     </main>
   );
 }

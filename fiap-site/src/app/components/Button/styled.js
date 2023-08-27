@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const CustomButton = styled.button`
   padding: 10px 16px;
-  left: 10rem;
+  right: 30rem;
   position: absolute;
   background: #EC4899;
   border: none;
@@ -14,5 +14,6 @@ const CustomButton = styled.button`
   gap: 1rem;
   cursor: pointer;
 `;
+
 
 export default CustomButton;
