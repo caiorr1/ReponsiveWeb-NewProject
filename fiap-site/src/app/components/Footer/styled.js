@@ -10,7 +10,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const Text = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   color: #FFF;
   text-align: center
 `;

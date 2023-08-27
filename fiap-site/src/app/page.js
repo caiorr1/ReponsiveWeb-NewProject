@@ -6,12 +6,12 @@ import BodyPadrao from "./components/PageBody/pagebody";
 
 export default function Home() {
   return (
-    <main>
-      <section>
-        <CabecalhoPadrao/>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: '#1E1B4B' }}>
+      <header><CabecalhoPadrao/></header>
+      <section style={{ flex: 1, margin: '70px', justifyContent: 'center', alignItems: 'center' }}>
         <main><BodyPadrao/></main>
       </section>
       <footer><RodapePadrao/></footer>
-    </main>
+    </div>
   );
 }

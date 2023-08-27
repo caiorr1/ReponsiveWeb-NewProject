@@ -12,9 +12,9 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  width: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-  height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-  margin-right: 10px; /* Adicione espaço entre a imagem e o texto */
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
 `;
 
 const LogoText = styled.div`
@@ -27,12 +27,23 @@ const Navigation = styled.nav`
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin-left: 95rem;
+    justify-content: center;
+    align-items: center;
   }
 
   li {
     cursor: pointer;
+    align-items: center;
   }
 `;
 
-export { HeaderWrapper, LogoContainer, LogoImage, LogoText, Navigation };
+const RightAlignedLi = styled.li`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+`;
+
+
+
+export { HeaderWrapper, LogoContainer, LogoImage, LogoText, Navigation, RightAlignedLi };

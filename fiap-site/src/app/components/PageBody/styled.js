@@ -25,7 +25,7 @@ const Description1 = styled.p`
     color: #FFF;
     /* H-4 */
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
@@ -43,7 +43,8 @@ const Description2 = styled.p`
 
 
 const Logo = styled.img`
-  max-width: 100px;
+  width: 700px;
+  margin-right: 10px;
 `;
 
 export { PageBodyWrapper, ContentWrapper, Title, Description1, Description2, Logo };

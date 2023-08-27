@@ -2,8 +2,6 @@ import styled from "styled-components"
 
 const CustomButton = styled.button`
   padding: 10px 16px;
-  right: 30rem;
-  position: absolute;
   background: #EC4899;
   border: none;
   border-radius: 10px;
