@@ -14,6 +14,7 @@ export default function CabecalhoPadrao() {
           <li>Home</li>
           <li>Sobre</li>
           <li>Contato</li>
+          <li>Protótipo</li>
         </ul>
       </Navigation>
     </HeaderWrapper>

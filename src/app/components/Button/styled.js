@@ -13,5 +13,4 @@ const CustomButton = styled.button`
   cursor: pointer;
 `;
 
-
 export default CustomButton;
