@@ -32,6 +32,7 @@ const Navigation = styled.nav`
   }
 
   li {
+    color: #FFF;
     cursor: pointer;
     align-items: center;
   }

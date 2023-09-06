@@ -45,6 +45,7 @@ const Description2 = styled.p`
 const Logo = styled.img`
   width: 700px;
   margin-right: 10px;
+  display: flex;
 `;
 
 export { PageBodyWrapper, ContentWrapper, Title, Description1, Description2, Logo };
