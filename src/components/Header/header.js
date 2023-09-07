@@ -1,6 +1,6 @@
 import { HeaderWrapper, LogoContainer, LogoImage, LogoText, Navigation, RightAlignedLi } from './styled';
 import BotaoConhecaPlanos from "../Button/button";
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function CabecalhoPadrao() {
   return (
@@ -16,7 +16,9 @@ export default function CabecalhoPadrao() {
           <li>Sobre</li>
           <li>Contato</li>
           <li>
-            <Link href="/prototipo">Protótipo</Link>
+            <Link href='/prototipo'>
+                Protótipo
+            </Link>
           </li>
         </ul>
       </Navigation>
