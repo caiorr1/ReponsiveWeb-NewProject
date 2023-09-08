@@ -5,11 +5,12 @@ import Header from '../components/HeaderChat/headerchat';
 
 export default function Home() {
   return (
-    <div className="container">
-      <h1></h1>
+    <div>
+      <header>
       <MobileScreen>
-        <Header />
+        <Header/>
       </MobileScreen>
+      </header>
     </div>
   );
 }

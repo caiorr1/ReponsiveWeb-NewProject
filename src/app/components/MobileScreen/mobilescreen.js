@@ -1,13 +1,11 @@
+
 import React from 'react';
-import styles from './mobilescreen.module.css';
+import MobileScreenSimulation from './styled'; 
 
-
-const MobileScreen = ({ children }) => {
-    return (
-      <div className={styles['mobile-screen-container']}>
-        {children}
-      </div>
-    );
-  };
-  
-  export default MobileScreen;
+export default function MobileScreen(){
+  return (
+    <div>
+      <MobileScreenSimulation></MobileScreenSimulation>
+    </div>
+  );
+};
