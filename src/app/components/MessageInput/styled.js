@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const MessageInputContainer = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas estreitas */
+  flex-wrap: wrap; 
   align-items: center;
   padding: 16px;
-  background-color: #f4f4f4;
-  margin-top: 75vh;
+  background-color: #f0ffff;
+  margin-top: 20vh;
 `;
 
 export const MessageField = styled.input`

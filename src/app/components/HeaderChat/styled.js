@@ -2,10 +2,10 @@
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: #007bff;
-  color: #fff;
+  background-color: #f0ffff;
+  color: #00A1FC;
   padding: 10px;
-  font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
+  font-family: 'Roboto', sans-serif;
 `;
 
 const HeaderContent = styled.div`
@@ -21,17 +21,35 @@ const HeaderLogo = styled.div`
   align-items: center;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
     margin-right: 10px;
+    border-radius: 64px;
+    border: 1px solid #6366F1;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
   }
 `;
 
 const HeaderSubtext = styled.div`
   p {
     font-size: 14px;
+    color: #111827;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  p.uppercase {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #00A1FC;
   }
 `;
 
-
-export { HeaderContainer, HeaderContent, HeaderLogo, HeaderSubtext }; 
+export { HeaderContainer, HeaderContent, HeaderLogo, HeaderSubtext };
