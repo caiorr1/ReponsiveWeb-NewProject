@@ -6,7 +6,7 @@ export const MessageInputContainer = styled.div`
   align-items: center;
   padding: 16px;
   background-color: #f4f4f4;
-  margin-top: 77vh;
+  margin-top: 75vh;
 `;
 
 export const MessageField = styled.input`

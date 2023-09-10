@@ -1,18 +1,19 @@
 import React from 'react';
+import { HeaderContainer, HeaderContent, HeaderLogo, HeaderSubtext } from './styled';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header-content">
-        <div className="header-logo">
+    <HeaderContainer>
+      <HeaderContent>
+        <HeaderLogo>
           <img src="" alt="Logo do Chatbot" />
           <span>Chatbot</span>
-        </div>
-        <div className="header-subtext">
+        </HeaderLogo>
+        <HeaderSubtext>
           <p>Suporte {'>'} Chat</p>
-        </div>
-      </div>
-    </header>
+        </HeaderSubtext>
+      </HeaderContent>
+    </HeaderContainer>
   );
 };
 
