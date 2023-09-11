@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import sendIcon from '/images/paper-plane-tilt.svg';
 
-export const MessageInputContainer = styled.div`
+const MessageInputContainer = styled.div`
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
@@ -10,16 +9,16 @@ export const MessageInputContainer = styled.div`
   margin-top: 20vh;
 `;
 
-export const MessageField = styled.input`
+const MessageField = styled.input`
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  margin-right: 10px; /* Espaço à direita do campo de mensagem */
+  margin-right: 10px;
 `;
 
-export const SendMessageButton = styled.button`
+const SendMessageButton = styled.button`
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -27,11 +26,23 @@ export const SendMessageButton = styled.button`
   padding: 10px 20px;
   cursor: pointer;
   font-size: 14px;
-  flex: 0; 
-  white-space: nowrap;
-  background-image: url(${sendIcon}); // Adicione a imagem como plano de fundo
-  background-size: 20px 20px; // Defina o tamanho da imagem
-  background-repeat: no-repeat; // Impede a repetição da imagem
-  background-position: center left; // Ajusta a posição da imagem (à esquerda no centro)
-  padding-left: 30px; // Adicione espaço à esquerda para a imagem
+  flex: 0;
+  display: flex;
+  align-items: center; /* Alinhe o conteúdo verticalmente */
+  justify-content: center; /* Centralize o conteúdo horizontalmente */
 `;
+
+const SendIcon = () => {
+  return (
+    <img
+      src="/images/paper-plane-tilt.svg"
+      alt="Ícone de envio"
+      style={{
+        width: '20px', // Defina a largura desejada
+        height: '20px', // Defina a altura desejada
+      }}
+    />
+  );
+};
+
+export { MessageInputContainer, MessageField, SendMessageButton, SendIcon }
