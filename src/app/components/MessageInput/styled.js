@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import sendIcon from '/images/paper-plane-tilt.svg';
 
 export const MessageInputContainer = styled.div`
   display: flex;
@@ -26,6 +27,11 @@ export const SendMessageButton = styled.button`
   padding: 10px 20px;
   cursor: pointer;
   font-size: 14px;
-  flex: 0; /* Não expande, mantém o tamanho fixo */
-  white-space: nowrap; /* Evita que o botão quebre em várias linhas */
+  flex: 0; 
+  white-space: nowrap;
+  background-image: url(${sendIcon}); // Adicione a imagem como plano de fundo
+  background-size: 20px 20px; // Defina o tamanho da imagem
+  background-repeat: no-repeat; // Impede a repetição da imagem
+  background-position: center left; // Ajusta a posição da imagem (à esquerda no centro)
+  padding-left: 30px; // Adicione espaço à esquerda para a imagem
 `;
