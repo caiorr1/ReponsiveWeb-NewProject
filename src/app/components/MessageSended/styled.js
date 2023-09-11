@@ -1,4 +1,3 @@
-'use client'
 import styled from 'styled-components';
 
 const ChatContainer = styled.div`
@@ -16,16 +15,17 @@ const ChatContainer = styled.div`
   }
 `;
 
-
 const MessageSendContainer = styled.div`
   display: flex;
   padding: 2%; /* Use porcentagem para o padding */
   align-items: flex-start;
   gap: 1%; /* Espaçamento entre os elementos como uma porcentagem da largura */
   margin-left: auto;
+
+  @media (max-width: 768px) {
+    padding: 2% 2%; /* Ajuste o padding em telas menores */
+  }
 `;
-
-
 
 const MessageReceiveContainer = styled.div`
   display: flex;
@@ -40,7 +40,6 @@ const MessageReceiveContainer = styled.div`
   }
 `;
 
-
 const MessageBubble = styled.div`
   padding: 12px;
   border-radius: 10px;
@@ -53,6 +52,11 @@ const MessageBubble = styled.div`
   font-family: 'Roboto', sans-serif; /* Fonte Roboto */
   font-weight: 400; /* Peso da fonte */
   line-height: 1.5; /* Altura da linha */
+
+  @media (max-width: 768px) {
+    padding: 8px; /* Ajuste o padding em telas menores */
+    font-size: 14px; /* Ajuste o tamanho da fonte em telas menores */
+  }
 `;
 
 const MessageText = styled.div`
@@ -63,6 +67,10 @@ const MessageText = styled.div`
   font-weight: 400;
   line-height: 1.5;
   word-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 14px; /* Ajuste o tamanho da fonte em telas menores */
+  }
 `;
 
 const SenderIcon = styled.div`
@@ -78,6 +86,21 @@ const SenderIcon = styled.div`
     border: 1px solid #6366F1;
     background: url(${props => props.imageUrl}), lightgray 50% / cover no-repeat;
   }
-  `;
 
-export { MessageText, MessageBubble, MessageSendContainer, ChatContainer, MessageReceiveContainer, SenderIcon };
+  @media (max-width: 768px) {
+    img {
+      width: 24px; /* Ajuste o tamanho da imagem em telas menores */
+      height: 24px; /* Ajuste o tamanho da imagem em telas menores */
+      margin-right: 8px; /* Ajuste a margem em telas menores */
+    }
+  }
+`;
+
+export {
+  MessageText,
+  MessageBubble,
+  MessageSendContainer,
+  ChatContainer,
+  MessageReceiveContainer,
+  SenderIcon,
+};
