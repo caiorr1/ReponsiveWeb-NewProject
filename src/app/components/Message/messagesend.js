@@ -1,4 +1,4 @@
-import { MessageText, MessageBubble, MessageSendContainer, MessageReceiveContainer, ChatContainer, SenderIcon } from './styled'
+import { MessageText, MessageBubble, MessageSendContainer} from './styled'
 
 const MessageSend = ({ text }) => {
   return (
