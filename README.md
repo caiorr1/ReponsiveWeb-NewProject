@@ -1,16 +1,16 @@
-## Instalando Dependências
+# Andromeda
 
-npm install
+Esse é um projeto/desafio proposto pela FIAP, feito para a Porto Seguro!
 
-## Iniciando o Projeto
-
+## Iniciar o projeto
+#### Npm
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install
 ```
+
+## Comandos
+- `dev`: inicia aplicação no [localhost:3000](http://localhost:3000);
+
 
 ## Integrantes do Grupo
 
