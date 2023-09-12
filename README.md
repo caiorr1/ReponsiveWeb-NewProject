@@ -15,12 +15,12 @@ npm install
 ## Integrantes do Grupo
 
 1TDSPY
-Caio Ribeiro Rodrigues 99759
-Eduardo Bartolomeo Jablinski 550975 
-Guilherme Riofrio Quaglio 550137
+Caio Ribeiro Rodrigues 99759;
+Eduardo Bartolomeo Jablinski 550975;
+Guilherme Riofrio Quaglio 550137;
 
 1TDSPX
-Natalia Siqueira Cardoso Scigliano 98430
-Gabriel Cunha dos Santos 98074
+Natalia Siqueira Cardoso Scigliano 98430;
+Gabriel Cunha dos Santos 98074;
 
 
