@@ -13,10 +13,10 @@ const HeaderChat = () => {
       <HeaderContent>
         <HeaderLogo>
           <img src="/images/bot-1.jpg" alt="Logo do Chatbot" />
-          <span style={{ color: '#111827' }}>Chatbot</span>
+          <span>Portinho</span>
         </HeaderLogo>
         <HeaderSubtext>
-          <p className="uppercase">Suporte &gt; Chat</p>
+          <p>Suporte &gt; Chat</p>
         </HeaderSubtext>
       </HeaderContent>
     </HeaderContainer>
