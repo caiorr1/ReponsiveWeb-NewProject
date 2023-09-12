@@ -18,7 +18,7 @@ const Title = styled.h1`
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
-    line-height: 60px; /* 125% */
+    line-height: 60px; 
     
 `;
 
