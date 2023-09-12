@@ -11,6 +11,10 @@ npm install
 ## Comandos
 - `dev`: inicia aplicação no [localhost:3000](http://localhost:3000);
 
+## Versão publicada
+
+[Acessar](https://reponsive-web-new-project.vercel.app/prototipo)
+
 
 ## Integrantes do Grupo
 
