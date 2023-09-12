@@ -13,7 +13,7 @@ npm install
 
 ## Versão publicada
 
-[Acessar](https://reponsive-web-new-project.vercel.app/prototipo)
+[Acessar](https://reponsive-web-new-project.vercel.app/)
 
 
 ## Integrantes do Grupo
