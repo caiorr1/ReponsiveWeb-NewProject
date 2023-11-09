@@ -12,11 +12,14 @@ export default function CabecalhoPadrao() {
       </LogoContainer>
       <Navigation>
         <ul>
-          <li>Home</li>
+          <li><Link href="/">Home</Link></li>
           <li>Sobre</li>
           <li>Contato</li>
           <li>
             <Link href="/prototipo">Protótipo</Link>
+          </li>
+          <li>
+            <Link href="/pesquisa">Pesquisa</Link>
           </li>
         </ul>
       </Navigation>
