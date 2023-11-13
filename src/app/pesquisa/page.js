@@ -1,13 +1,12 @@
 "use client"
+// Importe as bibliotecas necessárias no início do arquivo
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-// Cores
 const primaryColor = '#1E1B4B';
 const secondaryColor = '#EC4899';
 const textColor = '#EEF2FF';
 
-// Componentes Estilizados
 const Container = styled.div`
   background-color: ${primaryColor};
   color: ${textColor};
@@ -81,18 +80,43 @@ const Instruction = styled.p`
   margin-bottom: 20px;
 `;
 
+const ResultBox = styled.div`
+  background-color: ${secondaryColor};
+  color: ${textColor};
+  border: 2px solid ${primaryColor};
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+`;
+
 const bodyStyles = {
   background: '#1E1B4B',
   margin: 0,
-  overflow: 'hidden'
+  overflow: 'hidden',
 };
 
 const CarInsuranceSystemScreen = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [result, setResult] = useState(null);
 
-  const handleSearch = () => {
-    // Adicione a lógica para integrar com a API Java usando o searchTerm
-    // e exibir os dados do usuário conforme necessário.
+
+const testData = [
+  {"placaVeiculo":"PPR9943","numeroApolice":10202322},
+  {"placaVeiculo":"SHJ234","numeroApolice":10202311},
+  {"placaVeiculo":null,"numeroApolice":10202310},
+  {"placaVeiculo":"WUE1347","numeroApolice":10202321}
+];
+
+
+  const handleSearch = async () => {
+    try {
+      const response = await fetch(`http://localhost:8080/usuarios/${searchTerm}`);
+      const data = await response.json();
+      setResult(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setResult(null);
+    }
   };
 
   return (
@@ -103,13 +127,24 @@ const CarInsuranceSystemScreen = () => {
         <InputContainer>
           <SearchInput
             type="text"
-            placeholder="Insira nome, CPF ou e-mail"
+            placeholder="Insira o CPF (Exemplo: 11122233344)"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <SearchButton onClick={handleSearch}>Buscar</SearchButton>
         </InputContainer>
-        <Instruction>Insira um nome, CPF ou e-mail para buscar dados do usuário:</Instruction>
+        <Instruction>Insira o CPF para buscar veículos e apólices vinculados ao Usuário (Apenas Números)</Instruction>
+
+        {result && (
+          <ResultBox>
+            {result.map((item, index) => (
+              <div key={index}>
+                <p>Placa do Veículo: {item.placaVeiculo}</p>
+                <p>Número da Apólice: {item.numeroApolice}</p>
+              </div>
+            ))}
+          </ResultBox>
+        )}
       </Container>
     </body>
   );
